@@ -1,0 +1,215 @@
+ @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Dosis:wght@200;300;400;500;600&family=Hanken+Grotesk:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,300&family=Inter:wght@300;600&family=Lato:wght@100;400&family=Mohave:ital,wght@1,500&family=Outfit:wght@400;800&family=Playfair+Display:ital,wght@1,500&family=Poppins:wght@300;400&display=swap');
+ :root {
+/* Neutral */
+	--c1: hsla(0, 100%, 67%, 0.096);
+	--c2: #ffb01e1c;
+	--c3: #00bb8f0e;
+	--c4: #1125d60c;
+	--white: #FFFFFF;
+	--lavender: rgba(200,199,255,1);
+	--lavender2: hsl(241, 90%, 80%);
+	--btn: hsl(224, 30%, 27%);
+/* Primary */
+	--c5: #F55;
+	--c6: #FFB21E;
+	--c7: #00BB8F;
+	--c8: #1125D6;
+	--black: black;
+/* gradients*/
+   --c9:  linear-gradient(0deg, rgba(46,43,233,1) 0%, rgba(120,87,255,1) 100%);
+   --c10:  linear-gradient(0deg, rgba(64, 21, 182, 0.04),  rgba(40, 0, 150, 0.582)100%);
+ }
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Hanken Grotesk', sans-serif;
+}
+
+main {
+	background-color: var(--white);
+	width: 28.7rem;
+	height: 20rem;
+	border-radius: 1rem;
+	box-shadow: 13px 27px 65px -2px var(--lavender);
+	display: flex;
+}
+
+.result-box {
+	width: 50%;
+	height: 100%;
+	border-radius: 1.07rem;
+	background: var(--c9);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+h1 {
+	font-size: 0.938em;
+	margin: 0.6rem 0 0;
+	color: var(--lavender);
+}
+
+.circle {
+	border-radius: 50%;
+	width: 7.9rem; 
+	height: 7.9rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--c10);
+	margin: 1.25rem 0 1.125rem;
+	position: relative;
+}
+.circle-text {
+	text-align: center;
+	font-size: 0.688em;
+	color: var(--lavender2);
+}
+span {
+	color: var(--white);
+	font-size: 45px;
+	font-weight: 700;
+	line-height: 1.2em;
+}
+
+.result-title {
+	font-size: 1.188em;
+	font-weight: 600;
+	color: var(--white);
+	margin: 0;
+}
+.result-paragraph {
+	margin: 0.65rem 0 1.22rem;
+	font-size: 11px;
+	font-weight: 200;
+	color: var(--lavender);
+	text-align: center;
+	width: 65%;
+}
+
+.sum-box {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.summary{
+	font-size: 15px;
+	width: 80%;
+	text-align: left;
+	margin-bottom: 1rem;
+	margin-top: 1.5rem;
+	font-weight: 700px;
+}
+.cognitive-habilyties{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+	margin-bottom: 0.65rem;
+	width: 80%;
+	height: 2.2rem;
+	font-size: 13px;
+	font-weight: 600;
+	border-radius: 6px;
+}
+.habilyties{
+	display: flex;
+	margin-left: 0.5rem;
+}
+.habilyties-text {
+	margin-left: 0.5rem;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 12px;
+}
+.qualification {
+	margin-right: 0.5rem;
+	margin-top: 0;
+	margin-bottom: 0;
+	color:  var(--lavender2);
+	font-size: 12px;
+}
+.number {
+	font-size: 12px;
+	color: var(--black);
+	font-weight: 800;
+}
+
+.btn {
+	width: 80%;
+	height: 2.2rem;
+	border-radius: 1rem;
+	cursor: pointer;
+	background: var(--btn);
+	border: none;
+	color: var(--white);
+	font-size: 11px;
+	font-weight: 700;
+	margin-top: 0.78rem;
+}
+.btn:hover {
+	background: var(--c9);
+}
+
+@media (max-width: 480px) {
+	main {
+	  width: 100%;
+	  height: 52rem;
+	  display: flex;
+	  flex-direction: column;
+	  background-color: rgba(255, 255, 255, 0);
+	}
+	.result-box{
+		width: 100%;
+		height: 43%;
+		border-radius: 0 0 1.6rem 1.6rem;
+		display: flex;	
+		flex-direction: column;
+		justify-content: center;
+	}
+	h1 {
+		font-size: 1.1rem;
+	}
+	.circle {
+		margin-top: 1.5rem;
+		margin-bottom: 1.7rem;
+		width: 8.9rem;
+		height: 8.9rem;
+	}
+	.result-title {
+		font-size: 1.4rem;
+	}
+	.result-paragraph{
+		font-size: 15px;
+	}
+	.sum-box {
+		width: 100%;
+		height: 55%;
+	}
+	.summary{
+		font-size: 1.1rem;
+	}
+	.cognitive-habilyties,
+	.btn {
+		height: 3.5rem;
+		margin-bottom: 1.1rem;
+		border-radius: 0.6rem;
+	}
+	.btn{
+		border-radius: 2rem;
+	}
+	.habilyties-text,
+	.qualification,
+	.number,
+	.btn {
+		font-size: 17px;
+	}
+}
